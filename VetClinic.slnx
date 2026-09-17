@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Auth/">
+    <Project Path="Auth/API/VetClinic.Auth.Api/VetClinic.Auth.Api.csproj" />
+  </Folder>
   <Project Path="MedicalRecord/API/VetClinic.MedicalRecord.Api/VetClinic.MedicalRecord.Api.csproj" />
   <Project Path="MedicalRecord/API/VetClinic.MedRec.Core/VetClinic.MedRec.Core.csproj" />
   <Project Path="MedicalRecord\API\VetClinic.MedRec.App.Contracts\VetClinic.MedRec.App.Contracts.csproj" />
