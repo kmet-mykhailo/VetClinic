@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Authentication.Google;
 using VetClinic.Auth.Api;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.AddServiceDefaults();
 builder.Services.AddAuthentication("Cookies")
 .AddCookie()
 .AddGoogle(options =>
@@ -25,6 +25,7 @@ var app = builder.Build();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapDefaultEndpoints();
 app.MapGet("/", () => "Hello World!");
 
 // login

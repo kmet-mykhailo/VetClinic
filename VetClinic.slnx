@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Common/">
+    <Project Path="Common/VetClinic.ServiceDefaults/VetClinic.ServiceDefaults.csproj" />
+  </Folder>
   <Folder Name="/Docs/">
     <File Path="Readme.md" />
   </Folder>
@@ -11,4 +14,5 @@
     <Project Path="MedicalRecord\API\VetClinic.MedRec.App.Contracts\VetClinic.MedRec.App.Contracts.csproj" />
     <Project Path="MedicalRecord\API\VetClinic.MedRec.App\VetClinic.MedRec.App.csproj" />
   </Folder>
+  <Project Path="VetClinic.AppHost\VetClinic.AppHost.csproj" />
 </Solution>
