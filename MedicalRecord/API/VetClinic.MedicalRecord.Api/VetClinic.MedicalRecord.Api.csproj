@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\..\Common\VetClinic.ServiceDefaults\VetClinic.ServiceDefaults.csproj" />
+      <ProjectReference Include="..\VetClinic.MedRec.DI\VetClinic.MedRec.DI.csproj" />
     </ItemGroup>
 
 </Project>
