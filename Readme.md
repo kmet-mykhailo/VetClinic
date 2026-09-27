@@ -19,7 +19,7 @@ The solution consists of several independent applications and shared libraries.
 
 * **Medical Record** — Service responsible for medical records and related functionality.
 
-* **ClientPatient** — Service responsible for clients, patients, and related functionality.
+* **Client** — Service responsible for clients, pets, and related functionality.
 
 * **SignalR** — Real-time communication service responsible for pushing updates to connected front-end applications.
 
