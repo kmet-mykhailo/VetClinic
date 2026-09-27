@@ -1,9 +1,12 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Google;
+using Scalar.AspNetCore;
 using VetClinic.Auth.Api;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddOpenApi();
 builder.AddServiceDefaults();
 builder.Services.AddAuthentication("Cookies")
 .AddCookie()
@@ -21,6 +24,16 @@ builder.Services.AddAuthorization();
 builder.Services.AddSingleton<JwtTokenService>();
 
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.MapOpenApi();
+    app.MapScalarApiReference(options =>
+        options.WithTitle("My .NET 10 API")
+            .WithTheme(ScalarTheme.Moon) // Use themes like Dark, Moon, Purple, etc.
+            .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient)
+    );
+}
 
 app.UseAuthentication();
 app.UseAuthorization();
