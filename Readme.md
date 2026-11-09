@@ -134,7 +134,7 @@ VetClinic/
 │   ├── FrontEnds/
 │   └── client-patient/
 │
-├── ClientPatient/
+├── Client/
 │   ├── API/
 │   └── FrontEnds/
 │
@@ -154,3 +154,4 @@ The exact structure may change as the project evolves.
 🚧 **Work in progress**
 
 The project is being developed incrementally. New services, communication mechanisms, authentication scenarios, and architectural patterns will be added over time.
+
