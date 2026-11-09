@@ -5,5 +5,5 @@ namespace VetClinic.MedRec.App.Contracts.Services;
 
 public interface IWeightEntryService
 {
-    Task<List<WeightEntryResult>> GetWeightEntries(GetWeightsQuery  query);
+    Task<List<WeightEntryResult>> GetWeightEntries(GetWeightsQuery query);
 }
