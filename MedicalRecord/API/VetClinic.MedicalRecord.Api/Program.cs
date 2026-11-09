@@ -22,7 +22,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MapDefaultEndpoints();
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", () => "ready");
 
 app.MapEndpoints();
 app.Run();
